@@ -1,0 +1,11 @@
+.App {
+    padding: 40px 0;
+}
+
+.title {
+    font-size: 40px;
+    background-color: #ccc;
+    text-align: center;
+    margin: 0 auto 20px;
+    line-height: 1.2;
+}
