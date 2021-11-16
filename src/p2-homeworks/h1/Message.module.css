@@ -7,27 +7,14 @@
     border-radius: 5px 5px 5px 0;
 }
 
-.message::before,
-.message::after {
-    content: '';
+.message::before {
     position: absolute;
     bottom: 0;
-}
-
-.message::before {
+    left: -20px;
     width: 20px;
     height: 20px;
-    background-color: darkseagreen;
-    left: -20px;
-}
-
-.message::after {
-    background-color: #fff;
-    border-radius: 50%;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
-    left: -40px;
+    content: '';
+    background-image: radial-gradient(circle at 0 0, rgba(0, 0, 0, 0) 20px, darkseagreen 0);
 }
 
 .message__avatar {
