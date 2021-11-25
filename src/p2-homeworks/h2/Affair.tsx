@@ -10,7 +10,6 @@ function Affair(props: AffairPropsType) {
 
     const deleteCallback = (id: number) => {
         props.deleteAffairCallback(id)
-        console.log(id);
     }
 
     return (

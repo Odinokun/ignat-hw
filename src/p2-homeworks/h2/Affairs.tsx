@@ -3,13 +3,13 @@ import Affair from './Affair'
 import {AffairType, FilterType} from './HW2'
 
 type AffairsPropsType = { // need to fix any
-    data: any
+    data: Array<AffairType>
     setFilter: (filter: FilterType) => void
     deleteAffairCallback: (id: number) => void
 }
 
 function Affairs(props: AffairsPropsType) {
-    const mappedAffairs = props.data.map((a: AffairType) => (
+    const mappedAffairs = props.data.map((a) => (
         <Affair // should work
             key={a._id}
             affair={a}
